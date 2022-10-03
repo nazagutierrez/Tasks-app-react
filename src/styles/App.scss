@@ -1,0 +1,205 @@
+$bg-color: #1a1d22;
+$bg-tasks-color: #282c34;
+$btn-color: darkviolet;
+$hover-purple: rgb(114, 4, 161);
+$hover-red: rgb(158, 32, 10);
+$hover-letter: rgb(219, 219, 219);
+
+@mixin flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+* {
+    margin: 0;
+    text-align: center;
+}
+
+html {
+    background-color: $bg-color;
+}
+
+.tasks-form {
+    @include flex-box();
+    width: 100vw;
+    height: 100vh;
+
+    .input-container {
+        width: 300px;
+        height: 300px;
+        padding: 15px;
+        border: 1px solid rgba(130, 4, 184, 0.418);
+        box-shadow: 0px 0px 20px 10px rgb(84, 30, 116);
+        border-radius: 4px;
+        background-color: $bg-tasks-color;
+
+        h3 {
+            color: rgb(235, 230, 230);
+            cursor: default;
+            padding-bottom: 10px;
+        }
+
+        .inp-title {
+            font-size: larger;
+            background-color: rgb(87, 85, 85);
+            color: white;
+            padding: 5px;
+            width: 80%;
+            height: 15%;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            margin-bottom: 5px;
+            
+            &:hover {
+                padding: 3px;
+                border: 2px solid $hover-purple;
+            }
+
+            &:focus {
+                padding: 3px;
+                border: 2px solid rgb(130, 4, 184);
+            }
+        }
+    
+        .inp-description {
+            resize: none;
+            font-size: larger;
+            background-color: rgb(87, 85, 85);
+            color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+            width: 80%;
+            height: 50%;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+
+            &:hover {
+                padding: 3px;
+                border: 2px solid $hover-purple;
+            }
+
+            &:focus {
+                padding: 3px;
+                border: 2px solid rgb(130, 4, 184);
+            }
+        }
+        
+    }
+
+    .btn-save {
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+        width: 30%;
+        height: 13%;
+        background-color: $btn-color;
+        border: none;
+        border-radius: 4px;
+        transition: all 250ms;
+
+        &:hover {
+            color: $hover-letter;
+            background-color: $hover-purple;
+        }
+    }
+}
+
+.tasks-length {
+    background-color: $bg-color;
+    margin: 30px;
+    font-size: larger;
+    
+    h1 {
+        color: rgb(235, 230, 230);
+        cursor: default;
+        margin-bottom: 10px;
+    }
+    
+    .link-create {
+            font-size: 18px;
+            font-weight: 500;
+            padding: 3px 6px 3px ;
+            color: white;
+            cursor: pointer;
+            background-color: $btn-color;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 250ms;
+
+            &:hover {
+                color: $hover-letter;
+                background-color: $hover-purple;
+            }
+    }
+}
+
+.tasks-map {
+    @include flex-box();
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    
+    .tasks-info {
+        color: rgb(235, 230, 230);
+        background-color: $bg-tasks-color;
+        overflow: auto;
+        margin: 8px;
+        width: 230px;
+        height: 130px;
+        border-radius: 5px;
+    
+        h3 {
+            margin: 5px;
+        }
+        
+        p {
+            padding: 0 10px 0 10px;
+            color: rgb(223, 217, 217);
+        }
+
+    }
+
+    .buttons {
+        @include flex-box();
+        margin-bottom: 20px;
+
+        .btn-delete {
+            color: white;
+            cursor: pointer;
+            background-color: rgb(204, 42, 13);
+            border: none;
+            border-radius: 3px;
+            width: 55px;
+            height: 35px;
+            margin-right: 10px;
+            transition: all 250ms;
+
+            &:hover {
+                color: $hover-letter;
+                background-color: $hover-red;
+            }
+            
+        }
+        
+        .link-edit {
+            @include flex-box();
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            background-color: $btn-color;
+            text-decoration: none;
+            border-radius: 3px;
+            width: 55px;
+            height: 35px;
+            transition: all 250ms;
+
+            &:hover {
+                color: $hover-letter;
+                background-color: $hover-purple;
+            }
+        }
+    }
+}
