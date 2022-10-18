@@ -7,8 +7,8 @@ This is a project made with Create React App, the objetive is train my developme
 * [LinkedIn](https://www.linkedin.com/in/nazarenogutierrezoficial)
 * [Portfolio]()
 
-## Deployed test project
-- [Deployed App](https://tasks-app-react.herokuapp.com/)
+## Initialize
+It is a deployed app, you can found the link in the about section!
 
 ## Contributing
 Project open to contributions /
