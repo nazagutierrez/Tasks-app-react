@@ -5,7 +5,7 @@ This is a project made with Create React App, the objetive is train my developme
 **Nazareno Gutierrez**
 
 * [LinkedIn](https://www.linkedin.com/in/nazarenogutierrezoficial)
-* [Portfolio]()
+* [Portfolio](https://nazagutierrez.github.io/portfolio/)
 
 ## Initialize
 It is a deployed app, you can found the link in the about section!
